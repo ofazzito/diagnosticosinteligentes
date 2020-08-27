@@ -6,7 +6,7 @@
 /*  Importación de fuentes desde un archivo del mismo proyecto  */
 @font-face {
   font-family : 'Pataya';
-  src         : url('/inc/fonts/Pataya/Pattaya-Regular.ttf');
+  src         : url('../fonts/Pataya/Pattaya-Regular.ttf');
 }
 
 
