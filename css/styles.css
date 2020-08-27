@@ -932,8 +932,16 @@
 
 .articulo img{
   float: left;
-  margin: 20px;
+  margin: 15 auto;
   max-width: 100%;
+}
+
+@media screen and (min-width: 590px) {
+
+  .articulo img{
+    margin: 15px 20px;
+  }
+
 }
 
 .articulo iframe{
