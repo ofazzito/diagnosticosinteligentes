@@ -19,8 +19,8 @@
     /*  Colores  */
     --primary-color       : #4495eb;
     --primary-color-alt   : #035DBF;
-    --secondary-color     : #FFD948;
-    --secondary-color-alt : #ffcc00;
+    --secondary-color     : #ffcc00;;
+    --secondary-color-alt : #FFD948;
     --title-color         : #121F26;
     --text-color          : #676F73;
     --body-bg-color       : #FAFDFF;
@@ -63,6 +63,7 @@
     --border-radius : 0.5rem;
     --box-shadow    : 0 2px 5px rgba(36, 47, 66, 0.1);
 }
+
   
   body {
     display          : flex;
@@ -118,6 +119,96 @@
     padding-top   : var(--block-spacing);
   }
   
+
+  /*** SELECTOR DE TEMAS***/
+  .data-theme {
+    position: fixed;
+    right: 0;
+    top: 35%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 100;
+  }
+
+  .icon {
+    color: white;
+    text-decoration: none;
+    padding: .7rem;
+    display: flex;
+    transition: all .5s;
+  }
+
+  .icon-azul{
+    background-color: #035DBF;
+  }
+
+  .icon-amarillo{
+    background-color: #ffcc00;
+  }
+
+  .icon-verde{
+    background-color: green;
+  }
+
+  .icon-naranja{
+    background-color: orangered;
+  }
+
+  .icon:first-child {
+    border-radius: 1rem 0 0 0;
+  }
+  
+  .icon:last-child {
+    border-radius: 0 0 0 1rem;
+  }
+
+  .icon:hover {
+    padding-right: 3rem;
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
+  }
+
+/*******************************************************/
+
+/****TEMAS****/
+
+.theme-azul{
+  --primary-color       : #4495eb;
+  --primary-color-alt   : #035DBF;
+  --color               : var(--primary-color);
+  --color-alt           : var(--primary-color-alt);
+}
+
+
+.theme-amarrillo{
+  --primary-color       : #FFD948;
+  --primary-color-alt   : #ffcc00;
+  --color               : var(--primary-color);
+  --color-alt           : var(--primary-color-alt);
+}
+
+.theme-verde{
+  --primary-color       : #33D440;
+  --primary-color-alt   : #0f4d14;
+  --color               : var(--primary-color);
+  --color-alt           : var(--primary-color-alt);
+}
+
+.theme-naranja{
+  --primary-color       : #F58331;
+  --primary-color-alt   : #ffcc00;
+  --color               : var(--primary-color);
+  --color-alt           : var(--primary-color-alt);
+}
+
+.prueba{
+  display: block;
+  background-color:  --primary-color;
+}
+
+/********************************************************/
   .content-wrapper {
     width        : calc(100% - 2rem);
     max-width    : var(--max-width);
@@ -291,11 +382,13 @@
   transform : initial;
 }
 
-.main-menu ul {
+.main-menu ul, .navegador ul {
   list-style   : none;
   padding-left : 0;
   margin       : 0;
 }
+
+
 
 @media screen and (min-width: 1024px) {
 
@@ -311,7 +404,7 @@
   top      : 0.5rem;
 }
 
-.main-menu a {
+.main-menu a, .navegador a {
   display         : block;
   padding         : 0.75rem 1rem;
   color           : var(--title-color);
@@ -485,8 +578,8 @@
 
 .articulo-section .content-wrapper{
 /*background-color: #FFD948;*/
-background: rgb(68,149,235);
-background: linear-gradient(190deg, rgba(68,149,235,1) 0%,  var(--body-bg-color) 100%);
+background: var(--primary-color); /*rgb(68,149,235);*/
+background: linear-gradient(190deg, var(--primary-color) 0%,  var(--body-bg-color) 100%);
 border-radius: var(--border-radius);
 padding: 2rem 0.5rem;
 
