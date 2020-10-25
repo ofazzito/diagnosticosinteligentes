@@ -61,7 +61,7 @@
   
     /* Otros */
     --border-radius : 0.5rem;
-    --box-shadow    : 0 2px 5px rgba(36, 47, 66, 0.1);
+    --box-shadow    : 0 2px 5px rgba(13, 13, 14, 0.397);
 }
 
   
@@ -212,8 +212,8 @@
   .content-wrapper {
     width        : calc(100% - 2rem);
     max-width    : var(--max-width);
-    margin-left  : 1rem;
-    margin-right : 1rem;
+    margin-left  : .5rem;
+    margin-right : .5rem;
   }
   
   @media screen and (min-width: 1024px) {
@@ -434,6 +434,71 @@
 }
  
 
+/**go-top**/
+
+.go-top-container{
+  position: fixed;
+  bottom: .5rem;
+  right: .5rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  z-index: -1;
+}
+
+.go-top-button{
+  width: 0rem;
+  height: 0rem;
+  background: var(--primary-color);
+  border-radius: 50%;
+  cursor: pointer;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: -1;
+  box-shadow: var(--box-shadow);
+}
+
+.go-top-button i{
+  position: absolute;
+  font-size: 3rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) scale(0);
+  color: var(--white-color);
+  transition: .2s;
+}
+
+.show{
+  z-index:var(--z-front);
+}
+
+.show .go-top-button{
+  animation: popup .3s ease-in-out;
+  width: 4rem;
+  height: 4rem;
+  z-index: var(--z-tooltip);
+}
+
+.show i {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+@keyframes popup{
+  0%{
+    width: 0rem;
+    height: 0rem;
+  }
+  50%{
+    width: 4rem;
+    height: 4rem;
+  }
+  100%{
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+
   /* ----- BANNER PRINCIPAL ----- */
 
 .main-banner {
@@ -519,6 +584,8 @@
 .service-item p {
   margin-bottom : 0;
 }
+
+
 
 /* ----- SOBRE NOSOTROS ----- */
 
