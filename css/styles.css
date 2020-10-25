@@ -22,7 +22,7 @@
     --secondary-color     : #ffcc00;;
     --secondary-color-alt : #FFD948;
     --title-color         : #121F26;
-    --text-color          : #676F73;
+    --text-color          : #3e4142;
     --body-bg-color       : #FAFDFF;
     --white-color         : #ffffff;
     --color               : var(--primary-color);
@@ -583,6 +583,7 @@
 
 .service-item p {
   margin-bottom : 0;
+  font-weight: 600;
 }
 
 
