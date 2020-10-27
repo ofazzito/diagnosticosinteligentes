@@ -1141,6 +1141,7 @@ background: linear-gradient(0deg, rgba(34,191,195,0.3533788515406162) 0%, rgba(4
     display: grid;
     grid-template-columns: 1fr 2fr; 
     column-gap: 2rem;
+    max-width: 900px;
   }
 
   .form-contact {
