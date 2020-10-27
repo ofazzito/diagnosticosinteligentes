@@ -64,39 +64,35 @@
       <button data-theme="verde" class="icon icon-verde"></button>
       <button data-theme="naranja" class="icon icon-naranja"></button>
     </div> 
-    <section class="contact-section section-container">
+    <section class="section-container contact-section">
       <h1>Contacto</h1>
       <div class="content-wrapper">
-        <article id="tres">
-          <div id="dos">
-            <h3>Suscríbase para recibir información de nuestras actividades, convocatorias y comunidades</h3>
-            <p>&nbsp;</p>
-            <form action="#" method="post" name="form1" id="form1">
+        <article class="form-contact" id="tres">
+          <h3>Suscríbase para recibir información de nuestras actividades, convocatorias y comunidades</h3>
+          
+          <form action="#" method="post" name="form1" id="form1">
+            <p>
+              <label for="textfield">Apellidos:</label>
+              <input name="ape" type="text" required="" id="ape" placeholder="Perez" maxlength="26">
+            </p>
               <p>
-                <label for="textfield">Apellidos:</label>
-                <input name="ape" type="text" required="" id="ape" placeholder="Apellidos" maxlength="26">
-              </p>
-              <p>
-                <label for="textfield2">Nombres:</label>
-                <input name="nom" type="text" id="nom" placeholder="Nombres" maxlength="30">
-              </p>
-              <p>
-                <label for="email">Email:</label>
-                <input name="email" type="email" required="" id="email" placeholder="EMail" maxlength="90">
-              </p>
-              <p>
-                <label for="tel">Celular:</label>
-                <input name="tel" type="tel" required="" id="tel" placeholder="(54) 11-3030-3030" maxlength="20">
-              </p>
-              <h4>
-                <input type="submit" name="submit" id="submit" value="Enviar">
-              </h4>
-            </form>
-          </div>
-          </article>
-         
-  
-        <address>
+              <label for="textfield2">Nombres:</label>
+              <input name="nom" type="text" id="nom" placeholder="Juan" maxlength="30">
+              </p> 
+            <p>
+              <label for="email">Email:</label>
+              <input name="email" type="email" required="" id="email" placeholder="tuemail@dominio.com" maxlength="90">
+            </p>
+            <p>
+              <label for="tel">Celular:</label>
+              <input name="tel" type="tel" required="" id="tel" placeholder="(54) 11-3030-3030" maxlength="20">
+            </p>  
+              
+              <input class="button" type="submit" name="submit" id="submit" value="Enviar">
+            
+          </form>
+        </article>
+        <article class="contact-info"">
           <div class="contact-item">
             <h4>Teléfono</h4>
             <p>
@@ -130,10 +126,11 @@
               <a href="https://www.google.com/maps/place/Centro+de+Graduados+de+Ingenier%C3%ADa/@-34.609742,-58.382591,15z/data=!4m5!3m4!1s0x0:0x917c374820213d6d!8m2!3d-34.609742!4d-58.382591" target="_blank">Av. Hipólito Yrigoyen 1144, C1106 CABA</a>
             </p>
           </div>
-
+          <div class="contact-item .map-ubication"> 
           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13135.117188245864!2d-58.382591!3d-34.609742!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x917c374820213d6d!2sCentro%20de%20Graduados%20de%20Ingenier%C3%ADa!5e0!3m2!1ses!2sar!4v1598128987134!5m2!1ses!2sar" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-  
-        </address>
+          </div>   
+        </article>
+        
       
       </div>
     </section>
@@ -148,6 +145,6 @@
     <p>Todos los derechos reservados © 2020 |  Diagnósticos Inteligentes Cooperativa  |  (54) 11 15-6050-1859</p>
   </footer>
 
-  <script src="/scripts/menu.js"></script>
+  <script src="js/menu.js"></script>
 </body>
 </html>

@@ -1135,48 +1135,63 @@ background: linear-gradient(0deg, rgba(34,191,195,0.3533788515406162) 0%, rgba(4
 
 /*  ----- CONTACTO -----  */
 
-.contact-section .content-wrapper {
-  display    : grid;
-  gap        : var(--block-spacing);
-  text-align : center;
-}
 
 @media screen and (min-width: 1024px) {
-
-  .contact-section .content-wrapper {
-    --max-width           : 800px;
-    grid-template-columns : 1fr 1fr;
-    text-align            : left;
+  .contact-section .content-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    column-gap: 2rem;
   }
 
-}
-
-.contact-section h4 {
-  margin-bottom : 0.5rem;
-}
-
-.contact-section address {
-  display    : grid;
-  gap        : 1rem;
-  font-style : normal;
-}
-
-@media screen and (min-width: 1024px) {
-
-  .contact-section address {
-    order : -1;
-    gap   : 2rem;
+  .form-contact {
+    max-height: 400px;
   }
 
+  .map-ubication {
+    height: 600px;
+  }
 }
 
-.contact-item .jam {
-  font-size : 1rem;
+.form-contact, .contact-info {
+  display: grid;
+  grid-row-gap: 1rem;
+  text-align: center;
+  padding-bottom: 2rem;
 }
+
+.form-contact form{
+  display: grid;
+}
+
+.form-contact form label {
+  display: block;
+}
+
+.form-contact form input{
+  margin: 0 auto;
+}
+
+.contact-item {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: left;
+}
+
+
+.contact-item .jam{
+  font-size: 1.8rem;
+  display: inline;
+  vertical-align: middle;
+}
+
+.contact-item a{
+  text-decoration: none;
+}
+
 
 .map-ubication {
-  width         : 100%;
-  height        : 200px;
+  max-width         : 100%;
+  height        : 350px;
   overflow      : hidden;
   border-radius : var(--border-radius);
 }
