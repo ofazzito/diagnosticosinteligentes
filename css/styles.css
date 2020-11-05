@@ -17,8 +17,8 @@
     --max-width : 1200px;
   
     /*  Colores  */
-    --primary-color       : #4495eb;
-    --primary-color-alt   : #035DBF;
+    --primary-color       : #F58331;
+    --primary-color-alt   : #ffcc00;
     --secondary-color     : #ffcc00;;
     --secondary-color-alt : #FFD948;
     --title-color         : #121F26;
@@ -125,6 +125,18 @@
     position: fixed;
     right: 0;
     top: 35%;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 100;
+  }
+
+  /*****SOCIAL BAR*******/
+  .social-bar {
+    position: fixed;
+    right: 0;
+    top: 35%;
     font-size: 1.5rem;
     display: flex;
     flex-direction: column;
@@ -133,11 +145,15 @@
   }
 
   .icon {
-    color: white;
-    text-decoration: none;
-    padding: .7rem;
+    
+    padding: .5rem;
     display: flex;
     transition: all .5s;
+  }
+
+  .icon a{
+    color: white;
+    text-decoration: none;
   }
 
   .icon-azul{
@@ -152,8 +168,8 @@
     background-color: green;
   }
 
-  .icon-naranja{
-    background-color: orangered;
+  .icon-rojo{
+    background-color: red;
   }
 
   .icon:first-child {

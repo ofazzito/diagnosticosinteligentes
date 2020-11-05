@@ -16,7 +16,7 @@ const activeMenu = () => {
 
 activeMenu()
 
-
+/*
 const PARAGRAPH = document.querySelector('body');
 const BUTTONS = document.querySelectorAll('.data-theme button');
 
@@ -33,7 +33,7 @@ BUTTONS.forEach(button => {
     localStorage.setItem('demo-theme', colour);
   });
 });
-
+*/
 window.onscroll = function(){
   if(document.documentElement.scrollTop > 400){
     document.querySelector('.go-top-container')
